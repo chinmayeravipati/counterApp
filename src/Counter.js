@@ -1,4 +1,5 @@
-import { useState } from "react";
+import {  useState } from "react";
+
 const Counter = () => {  
     const [count,setCount] = useState(0);
     const increaseByOne = () => {
@@ -13,9 +14,8 @@ const Counter = () => {
             <p>{count}</p>
             <button onClick={increaseByOne}>increase</button>
             <button onClick={decreaseByOne}>decrease</button>
+            <button onClick={()=>setCount(0)}>Reset</button>
         </div>
     );
-
-
 };
 export default Counter;
